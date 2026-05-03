@@ -4,17 +4,16 @@ import Link from "next/link";
 import React from "react";
 import logoImg from "../../../assets/logo.png";
 import { usePathname } from "next/navigation";
+import { ChartNoAxesCombined, History, House } from "lucide-react";
 
 const Navbar = () => {
   const pathName = usePathname();
 
   return (
-    <div className="w-full bg-gray-100">
-      <div className="max-w-[1280px] mx-auto px-6 py-3 flex items-center justify-between">
-        {/* Logo */}
+    <div className="bg-white">
+      <div className="max-w-[1280px] mx-auto px-6 py-6 flex items-center justify-between">
         <Image src={logoImg} alt="Logo" />
 
-        {/* Menu */}
         <div className="flex items-center gap-6 text-sm">
           <Link
             href="/"
@@ -24,8 +23,10 @@ const Navbar = () => {
                 : ""
             }`}
           >
-            <button className="cursor-pointer">
-              <span>🏠 </span>
+            <button className="cursor-pointer flex items-center">
+              <span className="mr-2">
+                <House className="w-5 h-5" />
+              </span>
               Home
             </button>
           </Link>
@@ -38,8 +39,10 @@ const Navbar = () => {
                 : ""
             }`}
           >
-            <button className="flex items-center gap-1  hover:text-black cursor-pointer">
-              <span>🕒 </span>
+            <button className="flex items-center gap-1   cursor-pointer">
+              <span>
+                <History />
+              </span>
               Timeline
             </button>
           </Link>
@@ -52,8 +55,10 @@ const Navbar = () => {
                 : ""
             }`}
           >
-            <button className="flex items-center gap-1 hover:text-black cursor-pointer">
-              <span>📊 </span>
+            <button className="flex items-center gap-1 cursor-pointer">
+              <span>
+                <ChartNoAxesCombined />
+              </span>
               Stats
             </button>
           </Link>

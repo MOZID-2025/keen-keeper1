@@ -77,7 +77,6 @@ const FriendDetails = ({ params: paramsPromise }) => {
     );
   }
 
-  // ক্যালকুলেশন
   const daysSinceContact = friend.days_since_contact || 0;
   const goal = friend.goal || 30;
   const next_due_date = friend.next_due_date || 0;
@@ -140,7 +139,7 @@ const FriendDetails = ({ params: paramsPromise }) => {
               </p>
 
               <p className="text-gray-500 mt-4 text-sm leading-relaxed ">
-                {friend.email}
+               Preferred: {friend.email}
               </p>
             </div>
 

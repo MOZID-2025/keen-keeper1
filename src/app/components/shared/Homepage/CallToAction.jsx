@@ -2,7 +2,7 @@ import React from "react";
 
 const CallToAction = () => {
   return (
-    <div className="w-full bg-gray-100 py-16">
+    <div className="w-full bg-gray-100 py-8">
       <div className="max-w-[1280px] mx-auto px-6 text-center">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">

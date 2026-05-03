@@ -20,7 +20,7 @@ const FriendCard = ({ friend }) => {
   };
 
   return (
-    <div className="bg-white rounded-xl border shadow-sm p-5 text-center hover:shadow-md transition duration-300 cursor-pointer">
+    <div className="bg-white rounded-xl shadow-sm p-5 text-center hover:shadow-md transition duration-300 cursor-pointer">
       {/* Friend Image */}
       <Image
         src={friend.picture}
@@ -31,9 +31,7 @@ const FriendCard = ({ friend }) => {
       />
 
       {/* Friend Name */}
-      <h3 className="text-lg font-semibold text-gray-800">
-        {friend.name}
-      </h3>
+      <h3 className="text-lg font-semibold text-gray-800">{friend.name}</h3>
 
       {/* Days Since Contact */}
       <p className="text-sm text-gray-500 mt-1">
@@ -56,7 +54,7 @@ const FriendCard = ({ friend }) => {
       <div className="mt-4">
         <span
           className={`text-xs font-medium px-3 py-1 rounded-full capitalize ${getStatusStyle(
-            friend.status
+            friend.status,
           )}`}
         >
           {friend.status.replace("_", " ")}

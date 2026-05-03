@@ -27,15 +27,17 @@ const MyFriends = () => {
   }
 
   return (
-    <div className="max-w-[1280px] mx-auto px-4 py-8">
-      <h2 className="text-2xl font-bold mb-6">Your Friends</h2>
+    <div className="bg-gray-100">
+      <div className="max-w-[1280px] mx-auto py-14 ">
+        <h2 className="text-2xl font-bold mb-6">Your Friends</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {friends?.map((friend) => (
-          <Link key={friend.id} href={`/friends/${friend.id}`}>
-            <FriendCard friend={friend} />
-          </Link>
-        ))}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {friends?.map((friend) => (
+            <Link key={friend.id} href={`/friends/${friend.id}`}>
+              <FriendCard friend={friend} />
+            </Link>
+          ))}
+        </div>
       </div>
     </div>
   );

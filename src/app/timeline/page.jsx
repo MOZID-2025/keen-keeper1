@@ -38,7 +38,6 @@ const TimelinePage = () => {
     }
   };
 
-  // ✅ Filter logic
   const filteredTimeline =
     filter === "All"
       ? timeline
@@ -49,7 +48,6 @@ const TimelinePage = () => {
       <div className="max-w-[1280px] mx-auto">
         <h1 className="text-3xl font-bold mb-4">📜 Timeline</h1>
 
-        {/* ✅ Filter Buttons */}
         <div className="mb-8">
           <div className="relative w-full max-w-[200px]">
             <select
