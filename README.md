@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🔗 Keen Keeper
 
-## Getting Started
+A smart relationship management web app that helps you stay connected with friends, track interactions, and maintain meaningful relationships over time.
 
-First, run the development server:
+---
+
+## 📌 Short Description
+
+Keen Keeper is a personal CRM-style application where users can log interactions (calls, texts, video chats) with friends and track relationship activity over time using a timeline system. It helps you never lose touch with important people in your life.
+
+---
+
+## ⚙️ Technologies Used
+
+- Next.js (App Router)
+- React.js
+- Tailwind CSS
+- LocalStorage (for data persistence)
+- Lucide React Icons
+- React Hot Toast
+- rechart
+
+---
+
+## ✨ Key Features
+
+### 1. 👥 Friend Management
+
+View and manage your friends with details like status, bio, and contact tracking information.
+
+### 2. ⚡ Quick Check-In System
+
+Log interactions instantly with one click:
+
+- Call
+- Text
+- Video
+  Each action automatically creates a timeline entry.
+
+### 3. 📜 Activity Timeline
+
+A fully dynamic timeline that tracks all interactions with:
+
+- Date of interaction
+- Type of activity (Call/Text/Video)
+- Friend name
+- Clean icon-based UI
+
+---
+
+## 🚀 How It Works
+
+1. Open a friend's profile
+2. Click Call, Text, or Video
+3. Activity is saved automatically
+4. View all history in the Timeline page
+
+---
+
+## 📷 Project Idea
+
+This project is inspired by personal CRM systems like maintaining strong social connections and avoiding losing touch with important people.
+
+---
+
+## 📦 Installation
 
 ```bash
+git clone https://github.com/MOZID-2025/keen-keeper1/
+cd keen-keeper
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
