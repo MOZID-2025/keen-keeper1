@@ -1,5 +1,11 @@
-import Image from "next/image";
+import CallToAction from "./components/shared/Homepage/CallToAction";
+import MyFriends from "./components/shared/Homepage/MyFriends";
 
 export default function Home() {
-  return <h2 className="bg-amber-700">Hello</h2>;
+  return (
+    <div>
+      <CallToAction />
+      <MyFriends />
+    </div>
+  );
 }

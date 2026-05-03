@@ -1,8 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/shared/Navbar";
-import callToAction from "@/components/shared/CallToAction";
-import CallToAction from "@/components/shared/CallToAction";
+import Footer from "./components/shared/Footer";
+import Navbar from "./components/shared/Navbar";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,11 +14,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "Keen Keeper",
-  description: "This is a Keen Keeper web portal",
-};
-
 export default function RootLayout({ children }) {
   return (
     <html
@@ -26,9 +21,29 @@ export default function RootLayout({ children }) {
       data-theme="light"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <Navbar></Navbar>
+      <body className="min-h-full flex flex-col">
+        <Navbar />
+        {children}
+        <Toaster
+          position="top-right"
+          toastOptions={{
+            style: {
+              borderRadius: "12px",
+              background: "#1f2937",
+              color: "#fff",
+              padding: "12px 16px",
+            },
+            success: {
+              iconTheme: {
+                primary: "#10b981",
+                secondary: "#ecfdf5",
+              },
+            },
+          }}
+        />
 
-      <body className="min-h-full flex flex-col">{children}</body>
+        <Footer />
+      </body>
     </html>
   );
 }
