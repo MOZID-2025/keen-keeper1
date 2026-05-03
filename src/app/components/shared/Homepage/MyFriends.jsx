@@ -1,5 +1,3 @@
-// MyFriends.jsx
-
 "use client";
 
 import UseFriends from "@/app/hooks/useFriends";
