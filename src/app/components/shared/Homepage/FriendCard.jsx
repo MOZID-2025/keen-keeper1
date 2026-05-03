@@ -1,5 +1,3 @@
-// FriendCard.jsx
-
 import Image from "next/image";
 
 const FriendCard = ({ friend }) => {
@@ -21,7 +19,6 @@ const FriendCard = ({ friend }) => {
 
   return (
     <div className="bg-white rounded-xl shadow-sm p-5 text-center hover:shadow-md transition duration-300 cursor-pointer">
-      {/* Friend Image */}
       <Image
         src={friend.picture}
         alt={friend.name}
@@ -30,15 +27,12 @@ const FriendCard = ({ friend }) => {
         className="rounded-full mx-auto mb-4 object-cover"
       />
 
-      {/* Friend Name */}
       <h3 className="text-lg font-semibold text-gray-800">{friend.name}</h3>
 
-      {/* Days Since Contact */}
       <p className="text-sm text-gray-500 mt-1">
         {friend.days_since_contact}d ago
       </p>
 
-      {/* Tags */}
       <div className="flex flex-wrap justify-center gap-2 mt-4">
         {friend.tags?.map((tag, index) => (
           <span
@@ -50,7 +44,6 @@ const FriendCard = ({ friend }) => {
         ))}
       </div>
 
-      {/* Status Badge */}
       <div className="mt-4">
         <span
           className={`text-xs font-medium px-3 py-1 rounded-full capitalize ${getStatusStyle(
