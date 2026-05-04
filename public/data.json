@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Emma Wilson",
-    "picture": "/man.png",
+    "picture": "/1.jpg",
     "email": "emma.wilson@example.com",
     "days_since_contact": 10,
     "status": "overdue",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Lisa Nakamura",
-    "picture": "/man.png",
+    "picture": "/2.jpg",
     "email": "lisa.nakamura@example.com",
     "days_since_contact": 12,
     "status": "overdue",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "James Wright",
-    "picture": "/man.png",
+    "picture": "/3.jpg",
     "email": "james.wright@example.com",
     "days_since_contact": 9,
     "status": "overdue",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "Olivia Brown",
-    "picture": "/man.png",
+    "picture": "/4.png",
     "email": "olivia.brown@example.com",
     "days_since_contact": 15,
     "status": "overdue",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Noah Johnson",
-    "picture": "/man.png",
+    "picture": "/5.jpg",
     "email": "noah.johnson@example.com",
     "days_since_contact": 3,
     "status": "on_track",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Sophia Lee",
-    "picture": "/man.png",
+    "picture": "/4.png",
     "email": "sophia.lee@example.com",
     "days_since_contact": 2,
     "status": "on_track",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "Liam Martinez",
-    "picture": "/man.png",
+    "picture": "/7.jpg",
     "email": "liam.martinez@example.com",
     "days_since_contact": 6,
     "status": "almost_due",
@@ -98,7 +98,7 @@
   {
     "id": 9,
     "name": "Ava Garcia",
-    "picture": "/man.png",
+    "picture": "/4.png",
     "email": "ava.garcia@example.com",
     "days_since_contact": 5,
     "status": "almost_due",
@@ -110,7 +110,7 @@
   {
     "id": 10,
     "name": "Ethan Clark",
-    "picture": "/man.png",
+    "picture": "/1.jpg",
     "email": "ethan.clark@example.com",
     "days_since_contact": 11,
     "status": "overdue",
@@ -134,7 +134,7 @@
   {
     "id": 12,
     "name": "Lucas Thomas",
-    "picture": "/man.png",
+    "picture": "/1.jpg",
     "email": "lucas.thomas@example.com",
     "days_since_contact": 4,
     "status": "on_track",

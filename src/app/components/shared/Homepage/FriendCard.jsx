@@ -18,14 +18,16 @@ const FriendCard = ({ friend }) => {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-sm p-5 text-center hover:shadow-md transition duration-300 cursor-pointer">
-      <Image
-        src={friend.picture}
-        alt={friend.name}
-        width={72}
-        height={72}
-        className="rounded-full mx-auto mb-4 object-cover"
-      />
+    <div className="bg-white  rounded-xl shadow-sm p-5 text-center hover:shadow-md transition duration-300 cursor-pointer">
+      <div className="w-[72px] h-[72px] mx-auto mb-4">
+        <Image
+          src={friend.picture}
+          alt={friend.name}
+          width={72}
+          height={72}
+          className="rounded-full object-cover w-full h-full"
+        />
+      </div>
 
       <h3 className="text-lg font-semibold text-gray-800">{friend.name}</h3>
 
